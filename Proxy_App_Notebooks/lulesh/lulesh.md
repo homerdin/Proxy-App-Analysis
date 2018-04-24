@@ -42,7 +42,7 @@ plt.show()
 
 
 ---
-## Intel Software Development Emulator !! Update
+## Intel Software Development Emulator
 | SDE Metrics | miniFE |
 |:-----------|:---:|
 | **Arithmetic Intensity** | 0.04 |
@@ -50,7 +50,7 @@ plt.show()
 | **Bytes per Store Inst** | 6.66 |
 
 ---
-## Roofline  -  Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz  !!!UPDATE
+## Roofline  -  Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz 
 ### 72 Threads - 36 - Cores 2300.0 Mhz
 |     GB/sec     |  L1 B/W |  L2 B/W |  L3 B/W | DRAM B/W |
 |:---------------|:-------:|:-------:|:-------:|:--------:|
@@ -566,7 +566,7 @@ outline lulesh.cc:549
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |1 (11.4%)|2.40|0.84|1.29|0.61%|26.19%|1.60%|3.25%|3.08%|
 |36 (3.8%)|0.71|0.29|0.44|3.94%|26.10%|29.58%|16.97%|15.38%|
-|72 (3.1%)|0.97|0.14|0.20|13.56|23.45%|9.02%|70.43%|44.07%|
+|72 (3.1%)|0.97|0.14|0.20|13.56%|23.45%|9.02%|70.43%|44.07%|
 
  ```c++
  549 #pragma omp parallel for firstprivate(numElem)
