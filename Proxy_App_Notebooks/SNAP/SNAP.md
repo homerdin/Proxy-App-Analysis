@@ -1,10 +1,50 @@
 
 # SNAP
 
-
+SNAP serves as a proxy application to model the performance of a modern discrete ordinates neutral particle transport application. SNAP may be considered an update to Sweep3D, intended for hybri
+d computing architectures. It is modeled off the Los Alamos National Laboratory code PARTISN. PARTISN solves the linear Boltzmann transport equation (TE), a governing equation for determining the number of n
+eutral particles (e.g., neutrons and gamma rays) in a multi-dimensional phase space. SNAP itself is not a particle transport application; SNAP incorporates no actual physics in its available data, nor does i
+t use numerical operators specifically designed for particle transport. Rather, SNAP mimics the computational workload, memory requirements, and communication patterns of PARTISN. The equation it solves has 
+been composed to use the same number of operations, use the same data layout, and load elements of the arrays in approximately the same order. Although the equation SNAP solves looks similar to the TE, it ha
+s no real world relevance.
 
 ---
-## Parameters
+## Parameters - inputFile with only # threads changed
+
+```
+! Input from namelist
+&invar
+  nthreads=72
+  nnested=1
+  npey=1
+  npez=1
+  ndimen=3
+  nx=20
+  lx=0.02
+  ny=20
+  ly=0.02
+  nz=12
+  lz=0.012
+  ichunk=10
+  nmom=4
+  nang=80
+  ng=72
+  mat_opt=1
+  src_opt=1
+  timedep=1
+  it_det=0
+  tf=0.01
+  nsteps=10
+  iitm=5
+  oitm=100
+  epsi=1.E-4
+  fluxp=0
+  scatp=0
+  fixup=0
+  soloutp=1
+  angcpy=2
+/
+```
 
 ---
 ## Scaling
