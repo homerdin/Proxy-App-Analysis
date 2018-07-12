@@ -131,7 +131,7 @@ plt.show()
 
 #### \* L3 BW ERT unable to recognize.  Very short plateau ( estimate taken from graph3 )
 
-<img src="CloverLeaf.pdf">
+<img src="CloverLeaf.png">
 
 ---
 ## UOPS Executed
