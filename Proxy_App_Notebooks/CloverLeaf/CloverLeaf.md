@@ -4,8 +4,13 @@ CloverLeaf is a mini-app that solves the compressible Euler equations on a Carte
   
 The computation in CloverLeaf has been broken down into "kernels" — low level building blocks with minimal complexity. Each kernel loops over the entire grid and updates one (or some) mesh variables, based on a kernel-dependent computational stencil. Control logic within each kernel is kept to a minimum , allowing maximum optimisation by the compiler. Memory is sacrificed in order to increase peformance, and any updates to variables that would introduce dependencies between loop iterations are written into copies of the mesh.
 
-## Build Information
-TODO
+---
+## Parameters 
+```
+Compiler = ifort (IFORT) 18.0.1 20171018
+Build_Flags = -g -O3 -march=native -no-prec-dev -qopenmp
+Run_Parameters = Using input deck "clover_bm16_short.in"
+```
 
 ---
 ## Scaling
@@ -126,7 +131,7 @@ plt.show()
 
 #### \* L3 BW ERT unable to recognize.  Very short plateau ( estimate taken from graph3 )
 
-<img src="CloverLeaf.ps">
+<img src="CloverLeaf.pdf">
 
 ---
 ## UOPS Executed
