@@ -135,7 +135,7 @@ plt.show()
 |**112 Threads** | 9912.56 | 5573.58 |  1050.00\* |   203.13  |
 #### \* L3 BW ERT unable to recognize.  Very short plateau ( estimate taken from graph3 )
 
-<img src='HPCCG.png' /img>
+<img src="HPCCG.png">
 
 ### @ Note: DRAM BW bound?
 
