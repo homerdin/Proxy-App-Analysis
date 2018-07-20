@@ -138,7 +138,7 @@ plt.show()
 | **Bytes per Load Inst** | 10.3 |
 | **Bytes per Store Inst** | 11.8 |
 
-<img src="XSBench.png" /src>
+<img src="XSBench.png">
 
 ---
 ## UOPS Executed
@@ -388,3 +388,6 @@ plt.show()
             {...}
  98 }
 ```
+
+## Memory Bound
+### Bound by the DRAM access, while being unable to make use of the smaller caches in the memory hierarchy
